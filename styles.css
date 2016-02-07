@@ -9,8 +9,10 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background-image: url("images/brickwall.png");
+  background-repeat: repeat;
 }
+
 /* Link Styles */
 
 a {
@@ -57,7 +59,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/devon2.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -75,6 +77,7 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  filter: sepia(100%);
 }
 .tag {
   background-color: #efefef;
@@ -86,7 +89,7 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: #ff9904;
 }
 .card {
   margin: 30px;
@@ -99,7 +102,20 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ff8499;
+}
+
+main .profile-image {
+  margin: 2px 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+  transition: all .5s;
+}
+
+main .profile-image:hover {
+  transform: scale(2);
 }
 
 ul.skills {
@@ -116,8 +132,14 @@ ul.skills {
   margin: 2px;
 }
 
+.skills li:hover {
+
+  text-shadow: 2px 2px black;
+
+}
+
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #ff8499;
 }
 
 footer {
@@ -205,3 +227,41 @@ a.social:hover {
 
 }
 
+/* Form Styles */
+
+input[type="text"],
+input[type="email"],
+textarea
+   {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #ff8499;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #d17484;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  text-shadow: 2px 2px black;
+}
